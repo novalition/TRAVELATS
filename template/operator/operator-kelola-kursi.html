@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Travelats - Kelola Kursi</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+<div class="header">
+	<div class="center">
+		<div id="logo">
+			<img src="image/Header.png">
+		</div>
+	</div>
+</div>
+<div id="halamantext">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-offset-1 col-lg-4">
+				<h2>Kelola Kursi</h2>
+			</div>
+			<div class="col-lg-7">
+				<ul>
+					<li><a href="operator-login.html">Log Out</a></li>
+					<li><a href="operator-profil.html">Profil</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="content-sidemenu">
+	<div class="container-fluid">
+		<div class="row">
+		<div class="col-md-2" id="sidemenu">
+			<ul class="nav nav-pills nav-stacked" role="tablist">
+				<li><a href="operator-beranda.html"> Beranda</a></li>
+				<li><a href="operator-kelola-jadwal.html"> Kelola Jadwal</a></li>
+				<li><a href="operator-kelola-manajer.html"> Kelola Manajer</a></li>
+				<li><a href="operator-kelola-supir.html"> Kelola Supir</a></li>
+				<li><a href="operator-kelola-kursi.html"> Kelola Kursi</a></li>
+				<li><a href="operator-kelola-rute.html"> Kelola Rute</a></li>
+				<li><a href="operator-kelola-tarif.html"> Kelola Tarif</a></li>
+				<li><a href="operator-kelola-operator.html"> Kelola Operator</a></li>
+				<li><a href="operator-kelola-bis.html"> Kelola Bis</a></li>
+				<li><a href="operator-kelola-penumpang.html"> Kelola Penumpang</a></li>
+			</ul>				
+		</div>
+		<div class="col-md-10" id="content-supir">
+			<h1 class="page-header">Data Kursi Bis ATS</h1>
+			<div class="text-right">
+				<a href="operator-create-kursi.html"><button type="button" class="btn btn-warning" style="margin-bottom: 20px">Create Kursi</button></a>
+			</div>
+			<table class="table table-bordered">
+				<tr>
+					<th>No</th>
+					<th>Plat Bis</th>
+					<th>No.STNK</th>
+					<th>Kuota Bis</th>
+					<th>No.Kursi</th>
+					<th>Status</th>
+					<th>Action</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>K1234BXY</td>
+					<td>0925784</td>
+					<td>26</td>
+					<td>A3</td>
+					<td>Booking</td>
+					<td>
+						<a href="operator-edit-kursi-1.html"><button type="button" class="btn btn-warning">Edit</button></a>
+						<button type="button" class="btn btn-warning" id="hapus" onclick="getConfirmation();">Delete</button>
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>K2345BXY</td>
+					<td>0955179</td>
+					<td>26</td>
+					<td>B4</td>
+					<td>Free</td>
+					<td>
+						<a href="operator-edit-kursi-2.html"><button type="button" class="btn btn-warning">Edit</button></a>
+						<button type="button" class="btn btn-warning" id="hapus" onclick="getConfirmation();">Delete</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12">
+				<p class="copyright">©copyright 2016</p>
+			</div>	
+		</div>
+	</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	function getConfirmation(){
+		var retVal = confirm("Apakah anda yakin ?");
+		if (retVal == true) {
+
+			return true;
+		}
+	}
+</script>
+</body>
+</html>
