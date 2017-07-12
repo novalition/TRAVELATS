@@ -10,7 +10,7 @@ class LoginUI extends ViewLoginUI
 	
 	public function tampilLoginUI()
 	{
-		include_once 'administrator/pages/loginUI.php';
+		include_once 'administrator/pages/loginui.php';
 		$this->end();
 	}
 }
