@@ -18,11 +18,35 @@ CREATE TABLE `bis` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
+DROP TABLE IF EXISTS `jadwal`;
+CREATE TABLE `jadwal` (
+  `id_jadwal` char(4) NOT NULL,
+  `id_supir` char(5) NOT NULL,
+  `id_rute` char(4) NOT NULL,
+  `jam_keberangkatan` time NOT NULL,
+  `id_bis` char(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
 DROP TABLE IF EXISTS `kursi`;
 CREATE TABLE `kursi` (
   `no_kursi` char(2) NOT NULL,
   `id_bis` char(5) NOT NULL,
   `status` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+DROP TABLE IF EXISTS `manajer`;
+CREATE TABLE `manajer` (
+  `nama` varchar(30) NOT NULL,
+  `id_manajer` char(5) NOT NULL,
+  `no_ktp` char(16) NOT NULL,
+  `alamat` varchar(50) NOT NULL,
+  `jenis_kelamin` varchar(1) NOT NULL,
+  `no_telp` varchar(13) NOT NULL,
+  `id_operator` char(5) NOT NULL,
+  `username` varchar(10) NOT NULL,
+  `password` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
@@ -60,6 +84,29 @@ CREATE TABLE `pemesanan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
+DROP TABLE IF EXISTS `penumpang`;
+CREATE TABLE `penumpang` (
+  `id_penumpang` char(5) NOT NULL,
+  `nama` varchar(30) NOT NULL,
+  `no_ktp` char(16) NOT NULL,
+  `alamat` varchar(50) NOT NULL,
+  `no_rek` varchar(12) NOT NULL,
+  `no_telp` varchar(13) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `jenis_kelamin` varchar(1) NOT NULL,
+  `username` varchar(10) NOT NULL,
+  `password` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+DROP TABLE IF EXISTS `rute`;
+CREATE TABLE `rute` (
+  `id_rute` char(4) NOT NULL,
+  `jalur` varchar(20) NOT NULL,
+  `tarif` int(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
 DROP TABLE IF EXISTS `supir`;
 CREATE TABLE `supir` (
   `nama` varchar(30) NOT NULL,
@@ -74,4 +121,4 @@ CREATE TABLE `supir` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
--- 2017-07-12 07:57:56
+-- 2017-07-12 08:46:15
