@@ -3,6 +3,6 @@
 $host = "localhost";
 $dbname = "travelats";
 $username = "root";
-$password = "travelat";
+$password = "aqsukapb";
 $db = "";
  ?>
