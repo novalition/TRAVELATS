@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Login Travelats</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="administrator/template/assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="administrator/template/assets/css/bootstrap.min.css">
 </head>
 <body>
 <div id="header">
