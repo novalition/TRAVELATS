@@ -13,22 +13,17 @@
 					<th>Jenis Pembayaran</th>
 					<th>Total Bayar</th>
 				</tr>
+<?php $i=1; 
+foreach ($isi_pembayaran as $pm) {?>
 				<tr>
-					<td>1</td>
-					<td>P444U</td>
-					<td>PE54N4N</td>
-					<td>Rabu/4 Januari 2017</td>
-					<td>ATM</td>
-					<td>Rp.100.000</td>
+					<td><?= $i ?></td>
+					<td><?= $pm['id_operator'] ?></td>
+					<td><?= $pm['id_pesanan'] ?></td>
+					<td><?= $pm['tanggal_pembayaran'] ?></td>
+					<td><?= $pm['no_pembayaran'] ?></td>
+					<td><?= $pm['total_bayar'] ?></td>
 				</tr>
-				<tr>
-					<td>2</td>
-					<td>P555R</td>
-					<td>PE5ANAN</td>
-					<td>Rabu/4 Januari 2017</td>
-					<td>Mobile Banking</td>
-					<td>Rp.100.000</td>
-				</tr>
+<?php $i++; }  ?>
 			</table>
 		</div>
 		</div>

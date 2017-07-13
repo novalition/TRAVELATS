@@ -7,31 +7,23 @@
 			<table class="table table-bordered">
 				<tr>
 					<th>No</th>
-					<th>Hari/Tanggal</th>
+					<th>ID Pemesanan</th>
 					<th>ID Penumpang</th>
-					<th>ID Pesanan</th>
-					<th>Jenis Bis</th>
-					<th>Rute</th>
 					<th>No. Kursi</th>
+					<th>ID Jadwal</th>
+					<th>Tanggal Pesan</th>
 				</tr>
+				<?php $i=1; 
+foreach ($isi_pemesanan as $pm) {?>
 				<tr>
-					<td>1</td>
-					<td>Rabu/4 Januari 2017</td>
-					<td>P444U</td>
-					<td>PE54N4N</td>
-					<td>Ekonomi</td>
-					<td>Pontianak - Ng. Mahap</td>
-					<td>A1</td>
+					<td><?= $i ?></td>
+					<td><?= $pm['id_pemesanan'] ?></td>
+					<td><?= $pm['id_penumpang'] ?></td>
+					<td><?= $pm['no_kursi'] ?></td>
+					<td><?= $pm['id_jadwal'] ?></td>
+					<td><?= $pm['tanggal_pesan'] ?></td>
 				</tr>
-				<tr>
-					<td>2</td>
-					<td>Rabu/4 Januari 2017</td>
-					<td>P555R</td>
-					<td>PE5ANAN</td>
-					<td>Ekonomi</td>
-					<td>Pontianak - Ng. Mahap</td>
-					<td>A2</td>
-				</tr>
+<?php $i++; }  ?>
 			</table>
 		</div>
 		</div>

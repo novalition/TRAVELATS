@@ -1,9 +1,9 @@
 <?php 
-include 'administrator/view/Laporan-pembayaran.php';
+include 'administrator/view/KelolaPembayaranUI.php';
 
-$pms = new LaporanPembayaran();
+$pmb = new KelolaPembayaran();
 
-$pms->tampilLaporanPembayaran();
+$pmb->tampilPembayaran();
 
 
  ?>

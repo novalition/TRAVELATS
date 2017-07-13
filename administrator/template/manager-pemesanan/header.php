@@ -4,14 +4,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Travelats - Laporan Pemesanan Tiket</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="administrator/template/assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="administrator/template/assets/css/bootstrap.min.css">
 </head>
 <body>
 <div class="header">
 	<div class="center">
 		<div id="logo">
-			<img src="image/Header.png">
+			<img src="administrator/template/assets/image/Header.png">
 		</div>
 	</div>
 </div>
